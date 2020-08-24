@@ -2,14 +2,15 @@ import React, { FC, useState } from "react";
 
 interface SearchProps {
   type: string;
+  onSearch: (value: string) => void;
 }
 
-const Search: FC<SearchProps> = ({ type }) => {
+const Search: FC<SearchProps> = ({ type, onSearch }) => {
   const [value, setValue] = useState("");
 
   const onsubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("submit", value);
+    onSearch(value);
   };
 
   return (

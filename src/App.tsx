@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import Search from "./components/Search";
+import User from "./components/User";
+import Post from "./components/Post";
 
 function App() {
   return (
     <div className="App">
-      <Search type="user" />
-      <Search type="post" />
+      <User />
+      <Post />
     </div>
   );
 }
