@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -35,4 +38,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* SEARCH COMPONENT */
+
+.search-component {
+  margin: 10px 0;
+}
+
+.search-component .label {
+  margin-right: 10px;
 }
